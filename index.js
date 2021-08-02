@@ -7,7 +7,7 @@ const {API_VERSION, IO_SERVER, PORT_DB} = require('./config');
 mongoose.set("useFindAndModify", false);
 
 // mogo db configuration
-mongoose.connect(`mongodb://${IO_SERVER}:${PORT_DB}/GLI`,
+mongoose.connect(`mongodb+srv://strider:bhxxLGjhlverJSKZ@cluster0.nqxn1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
     {useNewUrlParser: true, useUnifiedTopology: true}, (err, res) => {
         if(err) {
             throw err;
